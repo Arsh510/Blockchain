@@ -1,0 +1,109 @@
+.pay{
+    background: linear-gradient(130.99deg, rgba(76, 161, 175, 0.42) 50%, rgba(196, 224, 229, 0.42) 87.97%);
+    border-radius: 48px;
+    display: block;
+    height: 100vh;
+    width: 70%;
+}
+*{
+    outline: none;
+    border: none;
+}
+.symbol{
+    font-size: 90px;
+    margin-left: 48%;
+    color: white;
+}
+
+.phone{
+    /* display: inline-block; */
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+
+.main{
+    padding: 40px 10px 10px 200px;
+
+}
+
+.main input{
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0.41);
+    border-radius: 11px;
+    border-color: white;
+    padding-left: 10px;
+    margin-left: 15px;
+    margin-top: 3px;
+    color: rgb(46, 46, 46);
+    outline: none;
+    border: none;
+}
+
+.main span{
+    color: white;
+    font-size: 23px;
+    /* font-weight: bold; */
+}
+
+.amount{
+    padding: 0px 10px 20px 200px;
+    margin-top:35px;
+    margin-left:110px;
+    font-size: 45px;
+}
+
+.amount input{
+    background-color: transparent;
+    border-color: transparent;
+    border: none;
+    outline: none;
+}
+.amount input{
+    margin-left: 10px;
+    width: 300px;
+    display: inline-block;
+}
+
+.notes{
+    padding: 0px 10px 10px 200px;
+    margin-left: 50px;
+}
+
+.notes input{
+    background-color: #79aaba;
+    border-radius: 37px;
+    width:180px;
+    height:35px;
+    border:none;
+    outline: none;
+    margin-left:50px;
+    padding-left:57px;
+}
+.payment{
+    background: linear-gradient(276.19deg,#4b79a1 20.19%,#283e51 73.15%);
+    border-radius: 30px;
+    width: 280px;
+    height:40px;
+    margin-top:20px;
+    z-index: 100;
+    margin-left: 250px;
+    color: white;
+}
+.payment:hover{
+    background: linear-gradient(200.19deg,#283e51 20.19%, #4b79a1 73.15%);
+    /* color: rgb(87, 88, 170); */
+    transition-delay: 15ms;
+
+}
+
+/* .center{
+    display: flex;
+} */
+
+.sponser{
+    color: white;
+    margin-left: 310px;
+    margin-top: 20px;
+
+}
