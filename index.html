@@ -1,46 +1,53 @@
-<!doctype html>
-<html lang="en">
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
 
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-    <link rel="stylesheet" href="index.css">
-    <title>Denver Payment-System</title>
+
+    <title>Block-Payement</title>
+    <link rel="stylesheet" href="test.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 
 <body>
-    <div class="container-fluid pay">
-        <div class="symbol">
-            ₹
+    <div class="wrapper">
+        <div class="title-text">
+            <div class="title login">
+                Make A Payment
+            </div>
         </div>
-        <div class="center">
-            <form action="">
-
-
-                <div class="main">
-                    <span>Phone : </span>
-                    <input type="text">
-                </div>
-
-                <div class="amount">
-                    ₹ <input type="text">
-                </div>
-
-                <div class="notes">
-                    <input type="text" placeholder="Add Note">
-                </div>
-                <div class="paynow">
-                    <input class="payment" type="submit" value="Pay Now">
-                </input>
-                </div>
-            </form>
-            
-            <div class="sponser"> Sponser | Denver | Sponser</div>
+        <div class="form-container">
+            <div class="form-inner">
+                <form action="#" class="login" id="form" onsubmit="returnValidatePhone(); returnvalidateAmount()">
+                    <div class="field">
+                        <input type="text" id="phone" placeholder="Phone No." required>
+                    </div>
+                    <div class="field">
+                        <input type="text" id="amount" placeholder="Amount" required>
+                    </div>
+                    <div class="field">
+                        <input type="text" id="notes" placeholder="Add A Note">
+                    </div>
+                    <div class="field btn">
+                        <div class="btn-layer"></div>
+                        <input type="submit" value="Make A Payment" onclick="showdetail()">
+                    </div>
+                </form>
+            </div>
         </div>
-
     </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
+        integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
+        integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
+        crossorigin="anonymous"></script>
 
 
 
@@ -52,12 +59,13 @@
 
 
 
-
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/firebase/7.14.1-0/firebase.js"></script>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
         crossorigin="anonymous"></script>
     <script src="index.js"></script>
+    <script src="main.js"></script>
 </body>
 
 </html>
