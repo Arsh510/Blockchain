@@ -16,16 +16,16 @@
             ₹
         </div>
         <div class="center">
-            <form action="">
+            <form action="" id="form" onsubmit="returnValidatePhone(); returnValidateAmount()">
 
 
                 <div class="main">
                     <span>Phone : </span>
-                    <input type="text" id="phone">
+                    <input type="text" id="phone" required>
                 </div>
 
                 <div class="amount" >
-                    ₹ <input type="text" id="amount">
+                    ₹ <input type="number" id="amount" required>
                 </div>
 
                 <div class="notes">
@@ -36,6 +36,7 @@
                 </input>
                 </div>
             </form>
+        
             <div class="status"></div>
             <div class="sponser"> Sponser | Denver | Sponser</div>
         </div>
